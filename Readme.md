@@ -1,4 +1,4 @@
-## EXEMPLO DE API FLASK COM CHAMADA MULTITHREAD
+## EXEMPLO DE API FASTAPI
 
 ### 1- Crie um virtual enviroment para a aplicação
 #### $ virtualenv venv
