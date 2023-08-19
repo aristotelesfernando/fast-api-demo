@@ -3,6 +3,7 @@ import uuid
 
 from fastapi import HTTPException
 from starlette import status
+from starlette.requests import Request
 from starlette.responses import Response
 
 from schemas import ListTaskSchema, GetTaskSchema, CreateTaskSchema
@@ -13,7 +14,8 @@ TODO = []
 
 
 @server.get('/todo', response_model=ListTaskSchema)
-def get_tasks():
+def get_tasks(request: Request):
+    print(request.state.user_id)
     return {
         'tasks': TODO
     }
