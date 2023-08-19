@@ -1,0 +1,10 @@
+version: "3.4"
+
+services:
+  fastapidemo:
+    image: afernandojr/fast_api_demo:2.0
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 8000:8000
