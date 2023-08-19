@@ -12,6 +12,7 @@
 ### Para poder executar apropriadamente essa aplicação no Windows, recomendo que seja feito através de containers Docker
 ### 3 - Execute um build de uma imagem docker (todos os comandos a seguir são exemplos)
 #### $ docker build -t <your_repo_name>/fast_api_demo:1.0 .
+##### (ajuste o arquivo do docker-compose.yml com o nome do seu repositorio)
 ### 4 - Excute docker-compose
 #### $ docker-compose up
 
