@@ -10,10 +10,10 @@ def generate_jwt():
     now = datetime.utcnow()
     payload = {
         "iss": "https://auth.coffeemesh.io/",
-        "sub": str(uuid.uuid4()),
+        "sub": "d0acdca3-2c73-4f59-a0da-95d40132621c",
         "aud": "http://127.0.0.1:8000/todo",
         "iat": now,
-        "exp": (now + timedelta(hours=1)).timestamp(),
+        "exp": (now + timedelta(hours=2)).timestamp(),
         "scope": "openid",
     }
 
